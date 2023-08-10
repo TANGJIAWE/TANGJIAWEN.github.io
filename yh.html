@@ -20,6 +20,16 @@ height:100%;
 </style>
 </head>
 <body>
+  <script>
+    var myCookie = document.cookie.replace(
+    /(?:(?:^|.*;\s*)qx\s*\=\s*([^;]*).*$)|^.*$/,
+    "$1",
+    );
+    if (myCookie !=1) {
+        alert("权限错误，您没有权限！")
+        window.location.href="https://tangjiawe.github.io/tangjiawen.github.io/sfyz1.html"
+    }
+    </script>    
 <canvas id="canvas"></canvas><script>
 function initVars(){
 
